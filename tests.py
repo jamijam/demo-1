@@ -1,11 +1,7 @@
-import unittest
-from unittest import TestCase
-from program import run
+import pytest
 
-class RunTestCase(TestCase):
+def func(x):
+    return x + 2
 
-    def test_returns_hello(self):
-        self.assertEqual(run(), "hello")
-
-if __name__ == '__main__':
-    unittest.main()
+def test_answer():
+    assert func(3) == 5
