@@ -6,8 +6,5 @@ python:
 install:
   - pip install -r requirements.txt
 
-script:
-  - pytest
-
 after_success:
   - bash <(curl -s https://scripts.scantist.com/staging/ci-travis-jar.sh)
